@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
     title: "Mohamed Ali",
+    description: "Mohamed Ali personal portfolio's website.",
+    type: "website",
+    image: "/og.png",
+    siteUrl: "https://mohamedali.dev",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -10,7 +13,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/assets/images/icon.png",
       },
     },
     "gatsby-plugin-sharp",
@@ -19,7 +22,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/assets/images/",
       },
       __key: "images",
     },
